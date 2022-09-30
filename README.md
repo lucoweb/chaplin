@@ -56,9 +56,10 @@ $ chmod 555 web/sites/default
 $ chmod 444 web/sites/default/settings.php
 ```
 
-2. Visit your local site at: https://chaplin.ddev.site
-3. Start the container with ```ddev start```
-4. Stop the container with ```ddev stop```
+2. Import the database by running ```ddev import-db```. No parameters are needed; the command will ask for the file to be imported.
+3. Visit your local site at: https://chaplin.ddev.site
+4. Start the container with ```ddev start```
+5. Stop the container with ```ddev stop```
 
 # Compiling the theme
 
