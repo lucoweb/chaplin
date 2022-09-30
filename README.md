@@ -31,7 +31,7 @@ The command ```ddev config --project-type=drupal9 --docroot=web --create-docroot
 - config sync files; and
 - the custom theme.
 
-- Please run the following commands, line per line, and enter admin password if needed:
+1. Run the following commands, line per line, and enter admin password if needed:
 ```
 $ sudo apt update
 $ sudo apt upgrade
@@ -44,15 +44,21 @@ $ cd ~/projects/chaplin
 $ ddev config --project-type=drupal9 --docroot=web --create-docroot
 $ ddev start
 $ ddev composer create "drupal/recommended-project"
-$ ddev composer require drush/drush drupal/admin_toolbar drupal/devel:^5.0@beta drupal/admin_toolbar drupal/bootstrap_barrio drupal/bootstrap_sass
+$ ddev composer require \
+drush/drush \
+drupal/admin_toolbar \
+drupal/devel:^5.0@beta \
+drupal/admin_toolbar \
+drupal/bootstrap_barrio \
+drupal/bootstrap_sass
 $ ddev exec drush site:install --account-name=admin --account-pass=admin
 $ chmod 555 web/sites/default
 $ chmod 444 web/sites/default/settings.php
 ```
 
-- Visit your local site at: https://chaplin.ddev.site
-- Start the container with ```ddev start```
-- Stop the container with ```ddev stop```
+2. Visit your local site at: https://chaplin.ddev.site
+3. Start the container with ```ddev start```
+4. Stop the container with ```ddev stop```
 
 # Compiling the theme
 
