@@ -15,19 +15,19 @@ An example movie catalog with Drupal 9 built using DDEV.
 # Usage
 - Clean installation strongly advised.
 - Import the DB dump provided or run ```drush cim``` to import the config sync files from **sites/default/files/sync**.
-- place the Movies/Actors images in:
+- Place the Movies/Actors images in:
   - sites/default/files/actors
   - sites/default/files/movies
 - Unpack the custom theme *Theater* and place it in **themes/custom**.
-- login with username/password: ```admin```
+- Login with username/password: ```admin```
 
 # Installing DDEV
 
-***Please note:*** If you're following any of the steps below, keep a backup of the repository files.
+***Please note:** If you're following any of the steps below, keep a backup of the repository files.*
 
 The command ```ddev config --project-type=drupal9 --docroot=web --create-docroot``` will erase: 
 - all of the content images;
-- DB dump;
+- the DB dump;
 - config sync files; and
 - the custom theme.
 
