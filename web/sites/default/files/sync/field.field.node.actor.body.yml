@@ -1,0 +1,23 @@
+uuid: 2ce1f72f-8ddf-4d29-b2d0-7c68a16daadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actor
+  module:
+    - text
+id: node.actor.body
+field_name: body
+entity_type: node
+bundle: actor
+label: 'Actor biography'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

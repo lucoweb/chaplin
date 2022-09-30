@@ -1,0 +1,18 @@
+uuid: 7a96f080-e47f-445e-b78b-650c7f0ebba0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Movie
+type: movie
+description: "Use <em>movies</em> for information on movie productions:\r\n<ul>\r\n  <li>Title</li>\r\n  <li>Poster</li>\r\n  <li>Synopsis</li>\r\n  <li>Actors</li>\r\n</ul>"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

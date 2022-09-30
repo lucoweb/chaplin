@@ -1,0 +1,20 @@
+uuid: 71a3fcca-0d2c-418f-957a-a45e48dd4a29
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theater
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: theater_page_title
+theme: theater
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

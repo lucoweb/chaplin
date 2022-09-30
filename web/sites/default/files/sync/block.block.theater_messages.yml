@@ -1,0 +1,22 @@
+uuid: 4f429c11-c587-4ad3-83ac-c1372c8b5b75
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theater
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: theater_messages
+theme: theater
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

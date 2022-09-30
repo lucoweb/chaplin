@@ -1,0 +1,22 @@
+uuid: 1aa237b2-2e7b-4f1f-9d54-34b826d455f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theater
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: theater_content
+theme: theater
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

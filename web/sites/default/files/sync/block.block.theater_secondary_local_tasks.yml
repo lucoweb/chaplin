@@ -1,0 +1,22 @@
+uuid: 6fbcb1a2-9376-4ebb-be59-6898c6a28d82
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theater
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: theater_secondary_local_tasks
+theme: theater
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

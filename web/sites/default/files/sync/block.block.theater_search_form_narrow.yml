@@ -1,0 +1,23 @@
+uuid: f5becfa6-4ca4-412f-8e21-61837b80dc5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - theater
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: theater_search_form_narrow
+theme: theater
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

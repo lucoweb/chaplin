@@ -1,0 +1,59 @@
+uuid: b29cdd9e-dbde-4ec3-8646-24fc07d5ec99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor.body
+    - field.field.node.actor.field_content_reference
+    - field.field.node.actor.field_date
+    - field.field.node.actor.field_image
+    - image.style.large
+    - node.type.actor
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.actor.default
+targetEntityType: node
+bundle: actor
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_content_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,22 @@
+uuid: 36822be6-eca0-4196-9c0a-94e70bc4b4a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theater
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: theater_breadcrumbs
+theme: theater
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: c60e59a3-a315-488e-a55f-5a38b9f2099a
+name: Chaplin
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /movies
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

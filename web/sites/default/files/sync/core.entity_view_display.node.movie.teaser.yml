@@ -1,0 +1,36 @@
+uuid: 082c4674-d9f7-45f0-915c-08a4308208b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.body
+    - field.field.node.movie.field_content_reference
+    - field.field.node.movie.field_date
+    - field.field.node.movie.field_image
+    - image.style.medium
+    - node.type.movie
+  module:
+    - image
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_content_reference: true
+  field_date: true
+  links: true
