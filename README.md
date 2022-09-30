@@ -14,13 +14,22 @@ An example movie catalog with Drupal 9 built using DDEV.
 
 # Usage
 - Clean installation strongly advised.
-- Import the DB dump provided and include the images in:
+- Import the DB dump provided or run ```drush cim``` to import the config sync files from **sites/default/files/sync**.
+- place the Movies/Actors images in:
   - sites/default/files/actors
   - sites/default/files/movies
-- Import the config sync files from **sites/default/files/sync**.
-- Unpack the custom theme Theater and place it in **themes/custom**.
+- Unpack the custom theme *Theater* and place it in **themes/custom**.
+- login with username/password: ```admin```
 
 # Installing DDEV
+
+***Please note:*** If you're following any of the steps below, keep a backup of the repository files.
+
+The command ```ddev config --project-type=drupal9 --docroot=web --create-docroot``` will erase: 
+- all of the content images;
+- DB dump;
+- config sync files; and
+- the custom theme.
 
 - Please run the following commands, line per line, and enter admin password if needed:
 ```
@@ -35,10 +44,8 @@ $ cd ~/projects/chaplin
 $ ddev config --project-type=drupal9 --docroot=web --create-docroot
 $ ddev start
 $ ddev composer create "drupal/recommended-project"
-$ ddev composer require "drush/drush"
-$ ddev composer require drupal/admin_toolbar drupal/devel:^5.0@beta 
+$ ddev composer require drush/drush drupal/admin_toolbar drupal/devel:^5.0@beta drupal/admin_toolbar drupal/bootstrap_barrio drupal/bootstrap_sass
 $ ddev exec drush site:install --account-name=admin --account-pass=admin
-$ ddev launch
 $ chmod 555 web/sites/default
 $ chmod 444 web/sites/default/settings.php
 ```
@@ -60,4 +67,6 @@ $ npm install
 $ gulp
 ```
 
-*Please note:* the ```gulp``` command keeps running, so you don't need to re-run it. Simply make changes to SCSS files and refresh your browser.
+*Please note:* 
+- The theme was already compiled to speed up screening.
+- The ```gulp``` command keeps running, so you don't need to re-run it. Simply make changes to SCSS files and refresh your browser.
