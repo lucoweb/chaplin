@@ -9,6 +9,7 @@ An example movie catalog with Drupal 9 built using DDEV.
    4. [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us) recommended.
 2. Linux/Mac OS
    1. Docker
+
 *Please note:* This setup was not tested in either Linux or Mac OS. YMMV.
 
 # Usage
@@ -49,14 +50,14 @@ $ chmod 444 web/sites/default/settings.php
 # Compiling the theme
 
 ```
-sudo apt install curl
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source ~/.profile
-nvm install node
-cd ~/projects/chaplin/web/themes/custom/theater/
-npm install --global gulp-cli
-npm install
-gulp
+$ sudo apt install curl
+$ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+$ source ~/.profile
+$ nvm install node
+$ cd ~/projects/chaplin/web/themes/custom/theater/
+$ npm install --global gulp-cli
+$ npm install
+$ gulp
 ```
 
 *Please note:* the ```gulp``` command keeps running, so you don't need to re-run it. Simply make changes to SCSS files and refresh your browser.
